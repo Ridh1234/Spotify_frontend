@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Added favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <!-- Added description meta tag for SEO -->
+    <meta name="description" content="Spotify Clone - Listen to your favorite music">
 </head>
 <body>
     <nav>
@@ -14,82 +18,81 @@
             <li>About</li>
         </ul>
     </nav>
-    <div class="container">
+
+    <main class="container">
         <div class="songlist">
             <h1>Best of NCS - No Copyright Songs</h1>
             <div class="songItemContainer">
-                <!-- Update song item structure and classes for consistency -->
-                <div class="songItem">
-                    <img src="covers/1.jpg" alt="1">
-                    <span class="songName">Let me Love You</span>
-                    <span class="songItemPlay">
-                        <span class="timestamp">05:34 <i class="fa-solid fa-play-circle" id="0"></i></span>
+                <!-- Added aria-labels for accessibility -->
+                <div class="songItem" aria-label="Song item">
+                    <img src="covers/1.jpg" alt="Song cover 1">
+                    <span class="songName">Warriyo - Mortals [NCS Release]</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">05:34 <i class="fas fa-play-circle songItemPlay" id="0" role="button" aria-label="Play song"></i></span>
                     </span>
                 </div>
-                <!-- Repeat for each song item with unique IDs -->
-                <div class="songItem">
-                    <img src="covers/2.jpg" alt="2">
-                    <span class="songName">Let me Love You</span>
-                    <span class="songItemPlay">
-                        <span class="timestamp">05:34 <i class="fa-solid fa-play-circle" id="1"></i></span>
+                <div class="songItem" aria-label="Song item">
+                    <img src="covers/2.jpg" alt="Song cover 2">
+                    <span class="songName">Cielo - Huma-Huma</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">05:34 <i class="fas fa-play-circle songItemPlay" id="1" role="button" aria-label="Play song"></i></span>
                     </span>
                 </div>
-                <div class="songItem">
-                    <img src="covers/3.jpg" alt="3">
-                    <span class="songName">Let me Love You</span>
-                    <span class="songItemPlay">
-                        <span class="timestamp">05:34 <i class="fa-solid fa-play-circle" id="2"></i></span>
+                <div class="songItem" aria-label="Song item">
+                    <img src="covers/3.jpg" alt="Song cover 3">
+                    <span class="songName">DEAF KEV - Invincible [NCS Release]-320k</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">05:34 <i class="fas fa-play-circle songItemPlay" id="2" role="button" aria-label="Play song"></i></span>
                     </span>
                 </div>
-                <div class="songItem">
-                    <img src="covers/4.jpg" alt="4">
-                    <span class="songName">Let me Love You</span>
-                    <span class="songItemPlay">
-                        <span class="timestamp">05:34 <i class="fa-solid fa-play-circle" id="3"></i></span>
+                <div class="songItem" aria-label="Song item">
+                    <img src="covers/4.jpg" alt="Song cover 4">
+                    <span class="songName">Different Heaven & EH!DE - My Heart [NCS Release]</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">05:34 <i class="fas fa-play-circle songItemPlay" id="3" role="button" aria-label="Play song"></i></span>
                     </span>
                 </div>
-                <div class="songItem">
-                    <img src="covers/5.jpg" alt="5">
-                    <span class="songName">Let me Love You</span>
-                    <span class="songItemPlay">
-                        <span class="timestamp">05:34 <i class="fa-solid fa-play-circle" id="4"></i></span>
+                <div class="songItem" aria-label="Song item">
+                    <img src="covers/5.jpg" alt="Song cover 5">
+                    <span class="songName">Janji-Heroes-Tonight-feat-Johnning-NCS-Release</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">05:34 <i class="fas fa-play-circle songItemPlay" id="4" role="button" aria-label="Play song"></i></span>
                     </span>
                 </div>
-                <div class="songItem">
-                    <img src="covers/6.jpg" alt="6">
-                    <span class="songName">Let me Love You</span>
-                    <span class="songItemPlay">
-                        <span class="timestamp">05:34 <i class="fa-solid fa-play-circle" id="5"></i></span>
+                <div class="songItem" aria-label="Song item">
+                    <img src="covers/6.jpg" alt="Song cover 6">
+                    <span class="songName">Rabba - Salam-e-Ishq</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">05:34 <i class="fas fa-play-circle songItemPlay" id="5" role="button" aria-label="Play song"></i></span>
                     </span>
                 </div>
-                <div class="songItem">
-                    <img src="covers/7.jpg" alt="7">
-                    <span class="songName">Let me Love You</span>
-                    <span class="songItemPlay">
-                        <span class="timestamp">05:34 <i class="fa-solid fa-play-circle" id="6"></i></span>
+                <div class="songItem" aria-label="Song item">
+                    <img src="covers/7.jpg" alt="Song cover 7">
+                    <span class="songName">Sakhiyaan - Salam-e-Ishq</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">05:34 <i class="fas fa-play-circle songItemPlay" id="6" role="button" aria-label="Play song"></i></span>
                     </span>
                 </div>
             </div>
         </div>
-        <div class="songbanner"></div>
-    </div>
+    </main>
 
-    <div class="bottom">
-        <input type="range" name="range" id="myProgressBar" min="0" max="100" value="0">
-
+    <footer class="bottom">
+        <!-- Added labels and aria-labels for better accessibility -->
+        <input type="range" name="range" id="myProgressBar" min="0" max="100" value="0" aria-label="Song progress">
         <div class="icons">
-            <i class="fa-solid fa-3x fa-step-backward" id="previous"></i>
-            <i class="fa-solid fa-3x fa-play-circle" id="masterPlay"></i>
-            <i class="fa-solid fa-3x fa-forward-step" id="next"></i>
+            <i class="fas fa-3x fa-step-backward" id="previous" role="button" aria-label="Previous song"></i>
+            <i class="fas fa-3x fa-play-circle" id="masterPlay" role="button" aria-label="Play/Pause"></i>
+            <i class="fas fa-3x fa-step-forward" id="next" role="button" aria-label="Next song"></i>
         </div>
-
         <div class="songInfo">
-            <img src="playing.gif" width="42px" alt="" id="gif">
-            <span id="masterSongName">Let me Love You - Justin Bieber</span>
+            <img src="playing.gif" width="42" alt="music playing animation" id="gif">
+            <span id="masterSongName">Warriyo - Mortals [NCS Release]</span>
         </div>
-    </div>
+    </footer>
 
-    <script src="https://kit.fontawesome.com/62ad87d1c8.js" crossorigin="anonymous"></script>
+    <!-- Removed duplicate Font Awesome script -->
+    <script src="https://kit.fontawesome.com/62ad87d1c8.js" crossorigin="anonymous" defer></script>
     <script src="script.js"></script>
 </body>
 </html>
