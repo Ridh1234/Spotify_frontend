@@ -87,7 +87,7 @@ nav ul li:hover {
 
 .container {
     min-height: 72vh;
-    max-height: calc(100vh - 155px); /* Adjusted to account for nav and bottom bar */
+    max-height: calc(100vh - 155px);
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('bg.jpg');
     background-size: cover;
     background-position: center;
@@ -171,7 +171,7 @@ nav ul li:hover {
     border-radius: 12px;
     backdrop-filter: blur(10px);
     overflow-y: auto;
-    max-height: calc(100vh - 350px); /* Adjusted for better scrolling */
+    max-height: calc(100vh - 350px);
 }
 
 .songItem {
@@ -245,6 +245,7 @@ nav ul li:hover {
     filter: drop-shadow(0 0 8px rgba(29,185,84,0.3));
 }
 
+/* Responsive Design */
 @media only screen and (max-width: 1100px) {
     .container {
         width: 95%;
@@ -267,5 +268,100 @@ nav ul li:hover {
 
     .songInfo {
         left: 5vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        padding: 0 12px;
+    }
+
+    nav ul li {
+        padding: 0 8px;
+        font-size: 0.9rem;
+    }
+
+    .brand img {
+        width: 36px;
+    }
+
+    .brand {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        width: 98%;
+        margin: 8px auto;
+        padding: 12px;
+    }
+
+    .songItem {
+        height: 60px;
+        padding: 6px;
+    }
+
+    .songItem img {
+        width: 40px;
+        height: 40px;
+        margin: 0 8px;
+    }
+
+    .timestamp {
+        margin: 0 8px;
+        gap: 8px;
+        font-size: 0.9rem;
+    }
+
+    #myProgressBar {
+        width: 90vw;
+    }
+
+    .icons {
+        gap: 20px;
+    }
+
+    .icons i {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav ul li:not(.brand) {
+        display: none;
+    }
+
+    .container {
+        padding: 8px;
+        margin: 4px auto;
+    }
+
+    .songItem {
+        height: 55px;
+    }
+
+    .songName {
+        font-size: 0.9rem;
+        max-width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .timestamp {
+        font-size: 0.8rem;
+    }
+
+    .bottom {
+        height: 110px;
+    }
+
+    .icons {
+        gap: 16px;
+    }
+
+    .songInfo {
+        left: 2vw;
+        padding: 6px 12px;
+        font-size: 0.9rem;
     }
 }
